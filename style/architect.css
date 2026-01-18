@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.work-sans-font{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* *{
+    margin: 0px auto;
+} */
+
+/* "!!!!!!!SHARED STYLE!!!!!!!" */
+
+.flex{
+    display: flex;
+}
+/* Dark 02 */
+.dark-gray{
+    color: #424242;
+}
+/* Dark 03 */
+.light-gray{
+    color:#727272;
+}
+/* H1 heading */
+#h1{
+    color: black;
+    font-size:  2.8125rem; /* 45px =  2.8125rem, 1 rem = 16px */
+    font-weight: bold;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+/* Paragraph */
+.paragraph{
+    font-size: 1rem;
+}
+/* Button */
+.button{
+    background-color: #FF900E;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight:550;
+    padding: 20px 25px;
+    border: none;
+}
+.button:hover{
+    background-color:white ;
+    color:#FF900E;
+    border: 1px solid #FF900E;
+
+}
+/* "!!!!!HEADER STYLE!!!!!!" */
+
+/* !!!!!NAVBAR STYLE!!!!!!*/
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu{
+     text-decoration: none;
+     font-size: 1.125rem;
+     font-weight: 500;
+}
+.menu-item{
+     list-style: none;
+     margin-right: 30px;
+
+}
+.navbar,.banner{
+        max-width: 1440px;
+        margin: 0px auto;
+        align-items: center;
+}
+/* banner */
+.banner{
+
+}
+.banner-content{
+    max-width: 862px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.banner-content h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+.banner-content p{
+    margin-bottom: 32px;
+    
+}
+
+.banner-img img{
+    width: 100%;
+    border-radius: 8px;
+    padding-bottom: 50px;
+}
+
+
+@media screen and (max-width:576px) {
+    .navbar, .menu{
+        flex-direction: column;
+    }
+    
+}
