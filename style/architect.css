@@ -22,14 +22,15 @@
 .light-gray{
     color:#727272;
 }
+
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
 /* H1 heading */
-#h1{
+.h1{
     color: black;
     font-size:  2.8125rem; /* 45px =  2.8125rem, 1 rem = 16px */
     font-weight: bold;
-}
-.bg-light{
-    background-color: rgba(255, 144, 14, 0.1);
 }
 /* Paragraph */
 .paragraph{
@@ -50,6 +51,14 @@
     color:#FF900E;
     border: 1px solid #FF900E;
 
+}
+/* Main */
+main{
+    max-width:1440px;
+    margin:0px auto;
+}
+main>section{
+    margin-top: 50px;
 }
 /* "!!!!!HEADER STYLE!!!!!!" */
 
@@ -101,11 +110,134 @@
     border-radius: 8px;
     padding-bottom: 50px;
 }
+/* Team features*/
+.team{
+    gap: 73px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 61px;
+}
+.team-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 24px;
+}
+.team-features p,h1{
+    margin-bottom: 32px;
 
-
-@media screen and (max-width:576px) {
-    .navbar, .menu{
-        flex-direction: column;
-    }
+}
+/* Our features */
+.our{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 146px;
+}
+.features-content{
+    width: 586px;
+    padding:38px 54px;
     
 }
+.features-content h1{
+    max-width: 648px;
+    padding: 21px;
+    border-left:5px solid #FF900E;
+}
+.features-content p{
+    margin-bottom: 30px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+.card-container .card{
+    border-radius: 8px;
+    padding: 0px 30px;
+    box-shadow: 0px 2px 15px 0px;
+}
+.card-container .card h4{
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.features-image img{
+    width: 100%;
+    
+}
+#badge{
+    padding: 46px 42px;
+    font-size: 1.5rem;
+    font-weight: 400px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#exp{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width:576px) {
+    .navbar, .menu, .team, .our{
+        flex-direction: column;
+    }
+    .banner-content p{
+    padding:30px;
+    
+    }
+    .team{
+        padding: 30px;
+    }
+    .team-image{
+     grid-template-columns: repeat(1,1fr);
+    }
+    .team-features{
+    text-align:center;
+    }
+    .our{
+        gap: 20px;
+    }
+    .features-content{
+        width: 100%;
+        height: 100%;
+    }
+    .features-image{
+        text-align: center;
+    }
+    #badge{
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .team, .our{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .team-image{
+     grid-template-columns: repeat(2,1fr);
+    }
+     .team-features{
+    text-align:center;
+    }
+    .features-content{
+        width: 100%;
+    }
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .features-image{
+        text-align: center;
+    }
+      #badge{
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+}
+     
+    
+   
+
+    
